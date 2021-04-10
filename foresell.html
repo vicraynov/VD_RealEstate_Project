@@ -1,0 +1,204 @@
+<!-- PROJECT V&D Real Estate 
+Viktor Raynov fn: 17621716 Group 4 
+Dimitar Dimitrov fn: 17621696 Group 4-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/lightbox.min.css">
+
+    <title>For sell - V&D Real Estate</title>
+    <link rel="icon" href="images/Logo-vdjpg.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <div class="navigation-container">
+        <nav class="main-nav">
+            <div class="left-nav div-a-nav">
+                <a href="foresell.html" class="nav-a">For sell</a>
+                <a href="forrent.html" class="nav-a">To rent</a>
+            </div>
+            <div class="img-nav">
+                <a href="index.html"><img src="images/logo_banner.png" alt="Logo" /></a>
+            </div>
+            <div class="right-nav div-a-nav">
+                <a href="contact.html" class="nav-a">Contact us</a>
+                <a href="about.html" class="nav-a">About us</a>
+            </div>
+            <div id="hSidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"><img src="images/logo-vd.png" alt="Logo" class="hamburger-img" /></a>
+                <a href="foresell.html" class="hamburger-a">For Sell</a>
+                <a href="forrent.html" class="hamburger-a">For rent</a>
+                <a href="contact.html" class="hamburger-a">Contact us</a>
+                <a href="about.html" class="hamburger-a">About us</a>
+            </div>
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            </div>
+
+        </nav>
+    </div>
+
+    <!--Top BUtton-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">▲</button>
+
+    <section class="forsell-section-page">
+        <div class="forsell-div-page">
+            <div class="forsell-text-page">
+                <h2>For sell</h2>
+            </div>
+        </div>
+    </section>
+
+    <div id="cityButtons">
+        <button class="btn_city active" onclick="filterSelection('all')"> All</button>
+        <button class="btn_city" onclick="filterSelection('Sofia')"> Sofia</button>
+        <button class="btn_city" onclick="filterSelection('Varna')"> Varna</button>
+        <button class="btn_city" onclick="filterSelection('Plovdiv')"> Plovdiv</button>
+        <button class="btn_city" onclick="filterSelection('Burgas')"> Burgas</button>
+    </div>
+
+    <div class="row">
+        <div class="column Sofia">
+            <div class="content">
+                <a href="images/forsale/1.jpg" data-lightbox="mygallery"><img src="images/forsale/1.jpg" alt="Sofia" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Three rooms</br>
+                    Closed complex<br> Mladost 1-Sofia, Bulgaria<br> Code: VD654</p>
+
+            </div>
+        </div>
+        <div class="column Sofia">
+            <div class="content">
+                <a href="images/forsale/2.jpg" data-lightbox="mygallery"><img src="images/forsale/2.jpg" alt="Sofia" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Three Rooms</br>
+                    Garage + basement<br> Lyulin-Sofia, Bulgaria<br> Code: VD605</p>
+            </div>
+        </div>
+        <div class="column Varna">
+            <div class="content">
+                <a href="images/forsale/3.jpg" data-lightbox="mygallery"><img src="images/forsale/3.jpg" alt="Varna" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>House</br>
+                    Garden + Pool<br> Vinitsa - Varna, Bulgaria<br> Code: VD505</p>
+            </div>
+        </div>
+
+        <div class="column Burgas">
+            <div class="content">
+                <a href="images/forsale/4.jpg" data-lightbox="mygallery"><img src="images/forsale/4.jpg" alt="Burgas" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Three Rooms</br>
+                    First floor, New Building<br> Lazur-Burgas, Bulgaria<br> Code: VD705</p>
+            </div>
+        </div>
+        <div class="column Plovdiv">
+            <div class="content">
+                <a href="images/forsale/5.jpg" data-lightbox="mygallery"><img src="images/forsale/5.jpg" alt="Plovdiv" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Two rooms</br>
+                    Big livingroom + parking<br> Hristo Smirnenski-Plovdiv, Bulgaria<br> Code: VD105</p>
+            </div>
+        </div>
+        <div class="column Burgas">
+            <div class="content">
+                <a href="images/forsale/6.jpg" data-lightbox="mygallery"><img src="images/forsale/6.jpg" alt="Burgas" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Two Rooms</br>
+                    New building<br> j.k. Izgrev-Burgas, Bulgaria<br> Code: VD706</p>
+            </div>
+        </div>
+
+        <div class="column Plovdiv">
+            <div class="content">
+                <a href="images/forsale/7.jpg" data-lightbox="mygallery"><img src="images/forsale/7.jpg" alt="Sofia" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Two rooms</br>
+                    New building, Parter<br> Kapana-Plovdiv, Bulgaria<br> Code: VD101</p>
+            </div>
+        </div>
+        <div class="column Varna">
+            <div class="content">
+                <a href="images/forsale/8.jpg" data-lightbox="mygallery"><img src="images/forsale/8.jpg" alt="Plovdiv" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Studio</br>
+                    Parking<br> Levski-Varna, Bulgaria<br> Code: VD507</p>
+
+            </div>
+        </div>
+        <div class="column Varna">
+            <div class="content">
+                <a href="images/forsale/9.jpg" data-lightbox="mygallery"><img src="images/forsale/9.jpg" alt="Varna" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Three Rooms</br>
+                    New building<br> Troshevo-Varna, Bulgaria<br> Code: VD508</p>
+            </div>
+        </div>
+        <div class="column Varna">
+            <div class="content">
+                <a href="images/forsale/10.jpg" data-lightbox="mygallery"><img src="images/forsale/10.jpg" alt="Varna" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Two Rooms</br>
+                    New building<br> Levski-Varna, Bulgaria<br> Code: VD509</p>
+            </div>
+        </div>
+        <div class="column Sofia">
+            <div class="content">
+                <a href="images/forsale/11.jpg" data-lightbox="mygallery"> <img src="images/forsale/11.jpg" alt="Sofia" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>House</br>
+                    Big house with pool<br> Boyana-Sofia, Bulgaria<br> Code: VD609</p>
+            </div>
+        </div>
+        <div class="column Plovdiv">
+            <div class="content">
+                <a href="images/forsale/12.jpg" data-lightbox="mygallery"> <img src="images/forsale/12.jpg" alt="Plovdiv" class="forsell_cover_photo"></a>
+                <h3>For sell</h3>
+                <p>Two rooms</br>
+                    New building<br> j.k. Hristo Botev-Plovdiv, Bulgaria<br> Code: VD109</p>
+            </div>
+        </div>
+
+        <!-- END GRID -->
+    </div>
+
+
+
+    <!--Footer-->
+    <footer class="footer-a">
+
+        <div class="footer-container">
+            <div class="footer-info">
+                V&D Real Estate <br> Varna, Bulgaria <br> ul. "Studentska 1" Levski <br> Tel: 088878888 <br> Email: viktoranddimitar@gmail.com
+
+            </div>
+
+            <div class="footer-logo">
+                <img src="images/Logo-vd.png" alt="Logo">
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/Facebook-icon.png" alt="fb"> </a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram-icon.png" alt="insta"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linked-in.png" class="linked-in" alt="linked-in"></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--JS import-->
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>
